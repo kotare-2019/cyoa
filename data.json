@@ -6,7 +6,10 @@
     "items": []
   },
   "path": [
-    "castle"
+    "castle",
+    "forest",
+    "WBP",
+    "PLF"
   ],
   "choices": {
     "1": "",

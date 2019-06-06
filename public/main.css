@@ -2,7 +2,7 @@ body {
   color: antiquewhite;
   font-family: 'Jim Nightshade', cursive;
   background:url("images/scroll.png") no-repeat center center fixed, url("images/forest.jpg") no-repeat center center fixed;
-  background-size: 1200px, cover;
+  background-size: 900px, cover;
 }
 
 .flex {
@@ -66,6 +66,7 @@ p {
 .links {
   position: relative;
   bottom: -350px;
+  
 }
 
 .gradient {
