@@ -38,6 +38,19 @@ router.get("/begin/", (req, res) => {
 
 });
 
+router.get("/begin1/", (req, res) => {
+
+    res.render("scenes/begin1", data)
+
+});
+
+router.get("/begin2/", (req, res) => {
+
+    res.render("scenes/begin2", data)
+
+});
+
+
 router.get("/forest/", (req, res) => {
 
     if (!data.path.includes("forest")) {
@@ -49,20 +62,49 @@ router.get("/forest/", (req, res) => {
     });
 
 
-    res.render("scenes/forest", data)
+    res.render("scenes/forest/forest", data)
 });
 
-router.get("/swamp/", (req, res) => {
+router.get("/follow/", (req, res) => {
 
-    if (!data.path.includes("swamp")) {
-        data.path.push("swamp")
+    if (!data.path.includes("follow")) {
+        data.path.push("follow")
     }
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
         if (err) throw err;
     });
 
-    res.render("scenes/swamp", data)
+
+    res.render("scenes/follow/follow", data)
+});
+
+router.get("/WBP/", (req, res) => {
+
+    if (!data.path.includes("WBP")) {
+        data.path.push("WBP")
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+
+    res.render("scenes/forest/WBP", data)
+});
+
+router.get("/PLF/", (req, res) => {
+
+    if (!data.path.includes("PLF")) {
+        data.path.push("PLF")
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+
+    res.render("scenes/forest/PLF", data)
 });
 
 router.get("/castle/", (req, res) => {
@@ -76,23 +118,38 @@ router.get("/castle/", (req, res) => {
         if (err) throw err;
     });
 
-    res.render("scenes/castle", data)
+    res.render("scenes/forest/castle", data)
 });
 
-router.get("/dungeon/", (req, res) => {
+// router.get("/swamp/", (req, res) => {
 
-    if (!data.path.includes("dungeon")) {
-        data.path.push("dungeon")
-    }
+//     if (!data.path.includes("swamp")) {
+//         data.path.push("swamp")
+//     }
 
-    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
-        if (err) throw err;
-    });
+//     fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+//         if (err) throw err;
+//     });
 
-    res.render("scenes/dungeon", data)
-});
+//     res.render("scenes/swamp", data)
+// });
 
-router.post("/home", (req, res) => {
+
+
+// router.get("/dungeon/", (req, res) => {
+
+//     if (!data.path.includes("dungeon")) {
+//         data.path.push("dungeon")
+//     }
+
+//     fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+//         if (err) throw err;
+//     });
+
+//     res.render("scenes/forest/dungeon", data)
+// });
+
+router.post("/begin1", (req, res) => {
 
     if (!data.character.name) {
         data.character.name = req.body.name
@@ -104,7 +161,7 @@ router.post("/home", (req, res) => {
         if (err) throw err;
     });
 
-    res.redirect("/begin/")
+    res.redirect("/begin2/")
 
 })
 

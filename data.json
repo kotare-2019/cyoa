@@ -6,6 +6,9 @@
     "items": []
   },
   "path": [],
+  "path": [
+    "castle"
+  ],
   "choices": {
     "1": "",
     "2": "",
