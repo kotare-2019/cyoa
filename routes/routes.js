@@ -62,7 +62,7 @@ router.get("/forest/", (req, res) => {
     });
 
 
-    res.render("scenes/forest", data)
+    res.render("scenes/forest/forest", data)
 });
 
 router.get("/follow/", (req, res) => {
@@ -76,7 +76,7 @@ router.get("/follow/", (req, res) => {
     });
 
 
-    res.render("scenes/follow", data)
+    res.render("scenes/follow/follow", data)
 });
 
 router.get("/WBP/", (req, res) => {
@@ -90,7 +90,7 @@ router.get("/WBP/", (req, res) => {
     });
 
 
-    res.render("scenes/WBP", data)
+    res.render("scenes/forest/WBP", data)
 });
 
 router.get("/PLF/", (req, res) => {
@@ -104,7 +104,7 @@ router.get("/PLF/", (req, res) => {
     });
 
 
-    res.render("scenes/PLF", data)
+    res.render("scenes/forest/PLF", data)
 });
 
 router.get("/castle/", (req, res) => {
@@ -118,7 +118,7 @@ router.get("/castle/", (req, res) => {
         if (err) throw err;
     });
 
-    res.render("scenes/castle", data)
+    res.render("scenes/forest/castle", data)
 });
 
 // router.get("/swamp/", (req, res) => {
@@ -146,7 +146,7 @@ router.get("/castle/", (req, res) => {
 //         if (err) throw err;
 //     });
 
-//     res.render("scenes/dungeon", data)
+//     res.render("scenes/forest/dungeon", data)
 // });
 
 router.post("/begin1", (req, res) => {
