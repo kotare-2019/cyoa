@@ -1,6 +1,10 @@
 body {
   background-image: url("images/scroll.png"), url("images/forest.jpg");
+  background-repeat: no-repeat;
+color: antiquewhite;
   font-family: 'Jim Nightshade', cursive;
+  background-position: top center;
+  background-size: 1000px 800px, cover;
 /* url(public/images/forest.jpg); */
 }
 
@@ -28,7 +32,7 @@ body {
 
 .nav {
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .form {
