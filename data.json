@@ -6,17 +6,11 @@
     "items": []
   },
   "path": [
-    "castle",
-    "forest",
     "WBP",
-    "PLF"
+    "castle"
   ],
-  "choices": {
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "",
-    "5": ""
+  "decisions": {
+    "sword": "true"
   },
   "_locals": {}
 }

@@ -2,5 +2,12 @@ Decision.
 
 Do you pick up the sword?
 
-<a href="/castle">Pick up the sword</a>
-<a href="/castle">Leave the sword where it is</a>
+<form action="/path/wellbeaten" method="POST">
+  <select name="sword">
+    <option selected disabled>Make your decision:</option>
+    <option value="true">Grab the sword</option>
+    <option value="false">Leave the sword</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Continue">
+</form>
