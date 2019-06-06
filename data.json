@@ -1,13 +1,11 @@
 {
   "character": {
-    "name": "Pano",
-    "fear": "Dingo's",
-    "love": "sand",
-    "items": [
-    ]
+    "name": "",
+    "fear": "",
+    "love": "",
+    "items": []
   },
-  "path": [
-  ],
+  "path": [],
   "choices": {
     "1": "",
     "2": "",

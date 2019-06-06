@@ -31,6 +31,10 @@ body {
 
 .title {
   text-align: center;
+  text-shadow: 3px 3px black;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 40px;
 }
 
 .nav {
@@ -62,4 +66,10 @@ p {
 .links {
   position: relative;
   bottom: -350px;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
