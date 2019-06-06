@@ -23,18 +23,35 @@ router.get("/begin/", (req, res) => {
         if (err) throw err;
     });
 
-    console.log(data)
-
     res.render("scenes/begin", data)
 
 });
 
-router.get("/scene1/", (req, res) => {
-    res.render("scenes/scene1", data)
+router.get("/forest/", (req, res) => {
+
+    if(!data.path.includes("forest")){
+        data.path.push("forest")
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+
+    res.render("scenes/forest", data)
 });
 
-router.get("/scene2/", (req, res) => {
-    res.render("scenes/scene2", data)
+router.get("/swamp/", (req, res) => {
+
+    if(!data.path.includes("swamp")){
+        data.path.push("swamp")
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+    res.render("scenes/swamp", data)
 });
 
 router.get("/scene3/", (req, res) => {
@@ -44,19 +61,6 @@ router.get("/scene3/", (req, res) => {
 router.get("/scene4/", (req, res) => {
     res.render("scenes/scene4", data)
 });
-
-////////////// POST
-
-router.post("/begin", (req, res) => {
-
-    const response = req.body.b1
-
-    console.log(req.body.b1)
-
-    data.path.one = buttonOne
-    
-    res.redirect("/home")
-})
 
 
 module.exports = router;

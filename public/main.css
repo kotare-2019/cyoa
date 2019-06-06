@@ -1,5 +1,5 @@
 body {
-  background-image: url(public/images/scroll.png), url(public/images/forest.jpg);
+  background-image: url('/images/scroll.png'), url('/images/forest.jpg');
   font-family: 'Jim Nightshade', cursive;
 
 }

@@ -9,13 +9,10 @@
       "A glowing crystal"
     ]
   },
-  "path": {
-    "2": "",
-    "3": "",
-    "4": "",
-    "5": "",
-    "one": ""
-  },
+  "path": [
+    "forest",
+    "swamp"
+  ],
   "choices": {
     "1": "",
     "2": "",
