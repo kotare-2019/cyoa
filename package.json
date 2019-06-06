@@ -1,0 +1,32 @@
+{
+  "name": "cyoa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "debug": "nodemon --inspect index --ignore data.json",
+    "test": "jest --watchall --noStackTrace",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotare-2019/cyoa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotare-2019/cyoa/issues"
+  },
+  "homepage": "https://github.com/kotare-2019/cyoa#readme"
+}

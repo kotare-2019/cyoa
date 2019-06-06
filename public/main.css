@@ -1,0 +1,65 @@
+body {
+  color: antiquewhite;
+  font-family: 'Jim Nightshade', cursive;
+  background:url("images/scroll.png") no-repeat center center fixed, url("images/forest.jpg") no-repeat center center fixed;
+  background-size: 1000px, cover;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
+
+.title {
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Jim Nightshade', cursive;
+}
+
+h1 {
+  position: relative;
+  bottom: -10px;
+  color: black;
+  font-size: 50px;
+}
+
+p {
+  position: relative;
+  bottom: -110px;
+  color: black;
+  font-size: 25px;
+}
+
+.links {
+  position: relative;
+  bottom: -350px;
+}
