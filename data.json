@@ -1,6 +1,27 @@
 {
-  "character": [
-    
-  ],
-  "path": 
+  "character": {
+    "name": "",
+    "fear": "",
+    "goal": "",
+    "items": [
+      "A rusty key",
+      "A small shovel",
+      "A glowing crystal"
+    ]
+  },
+  "path": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": ""
+  },
+  "choices": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": ""
+  },
+  "_locals": {}
 }
