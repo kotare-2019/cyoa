@@ -8,6 +8,29 @@ router.get("/", (req, res) => {
 });
 
 router.get("/home", (req, res) => {
+
+    {
+        "character": {
+          "name": "Pano",
+          "fear": "Dingo's",
+          "love": "sand",
+          "items": [
+          ]
+        },
+        "path": [
+        ],
+        "choices": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+          "5": ""
+        },
+        "_locals": {}
+      }
+
+      data.character["items"] = 
+
     res.render("home", data);
 });
 

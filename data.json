@@ -4,14 +4,9 @@
     "fear": "Dingo's",
     "love": "sand",
     "items": [
-      "A rusty key",
-      "A small shovel",
-      "A glowing crystal"
     ]
   },
   "path": [
-    "",
-    ""
   ],
   "choices": {
     "1": "",
