@@ -1,8 +1,8 @@
 {
   "character": {
-    "name": "",
-    "fear": "",
-    "goal": "",
+    "name": "Pano",
+    "fear": "Dingo's",
+    "love": "sand",
     "items": [
       "A rusty key",
       "A small shovel",
@@ -10,8 +10,8 @@
     ]
   },
   "path": [
-    "forest",
-    "swamp"
+    "",
+    ""
   ],
   "choices": {
     "1": "",
