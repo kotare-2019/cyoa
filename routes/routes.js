@@ -48,8 +48,14 @@ router.get("/scene4/", (req, res) => {
 ////////////// POST
 
 router.post("/begin", (req, res) => {
+
+    const response = req.body.b1
+
+    console.log(req.body.b1)
+
+    data.path.one = buttonOne
     
-    res.redirect("")
+    res.redirect("/home")
 })
 
 
