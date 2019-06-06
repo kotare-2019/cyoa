@@ -9,27 +9,15 @@ router.get("/", (req, res) => {
 
 router.get("/home", (req, res) => {
 
-    {
-        "character": {
-          "name": "Pano",
-          "fear": "Dingo's",
-          "love": "sand",
-          "items": [
-          ]
-        },
-        "path": [
-        ],
-        "choices": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-          "5": ""
-        },
-        "_locals": {}
-      }
+    data.character.name = ''
+    data.character.fear = ''
+    data.character.love = ''
+    data.character["items"] = []
+    data.path = []
 
-      data.character["items"] = 
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
 
     res.render("home", data);
 });
