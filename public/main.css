@@ -1,6 +1,7 @@
 body {
-  background-color: #FFCCCC;
-  font-family: 'Spirax', cursive;
+  background-image: url(public/images/scroll.png), url(public/images/forest.jpg);
+  font-family: 'Jim Nightshade', cursive;
+
 }
 
 .container {
@@ -12,20 +13,6 @@ body {
 .app {
   display: flex;
   flex-direction: column;
-}
-
-.puppy-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
-}
-
-.puppy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
 }
 
 .img-circle {
@@ -48,5 +35,5 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Jim Nightshade', cursive;
 }
