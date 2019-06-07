@@ -43,9 +43,6 @@ body {
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: 'Jim Nightshade', cursive;
 }
 
@@ -66,7 +63,7 @@ p {
 .links {
   position: relative;
   bottom: -350px;
-  
+
 }
 
 .gradient {
