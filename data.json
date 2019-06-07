@@ -6,12 +6,18 @@
     "items": [
       "A rusty key",
       "A small shovel",
-      "A glowing crystal"
+      "A glowing crystal",
+      "mushrooms"
     ]
   },
   "path": [
-    "forest"
+    "forest",
+    "PLF",
+    "swamp",
+    "swamp end"
   ],
-  "decisions": {},
+  "decisions": {
+    "mushrooms": "true"
+  },
   "_locals": {}
 }

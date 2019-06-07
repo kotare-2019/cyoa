@@ -125,8 +125,8 @@ router.get("/castle/", (req, res) => {
 router.get("/castle/end", (req, res) => {
 
 
-    if (!data.path.includes("end")) {
-        data.path.push("end")
+    if (!data.path.includes("castle end")) {
+        data.path.push("castle end")
     }
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
@@ -135,19 +135,33 @@ router.get("/castle/end", (req, res) => {
 
     res.render("scenes/forest/castle/end", data)
 });
-// router.get("/swamp/", (req, res) => {
 
-//     if (!data.path.includes("swamp")) {
-//         data.path.push("swamp")
-//     }
+router.get("/swamp/", (req, res) => {
 
-//     fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
-//         if (err) throw err;
-//     });
+    if (!data.path.includes("swamp")) {
+        data.path.push("swamp")
+    }
 
-//     res.render("scenes/swamp", data)
-// });
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
 
+    res.render("scenes/forest/swamp/swamp", data)
+});
+
+router.get("/swamp/end", (req, res) => {
+
+
+    if (!data.path.includes("swamp end")) {
+        data.path.push("swamp end")
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+    res.render("scenes/forest/swamp/end", data)
+});
 
 
 // router.get("/dungeon/", (req, res) => {
@@ -196,6 +210,26 @@ router.post("/path/wellbeaten", (req, res) => {
     });
 
     res.redirect("/castle/")
+
+})
+
+router.post("/path/lessfollowed", (req, res) => {
+
+    console.log(req.body)
+
+    if (!data.decisions.mushrooms) {
+        data.decisions.mushrooms = req.body.mushrooms
+    }
+
+    if (data.decisions.mushrooms == "true") {
+        data.character.items.push("mushrooms")
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+    res.redirect("/swamp/")
 
 })
 
