@@ -1,12 +1,15 @@
 {
   "character": {
-    "name": "",
-    "fear": "",
-    "love": "",
+    "name": "sdn",
+    "fear": "gsf",
+    "love": "fgdgf",
     "items": []
   },
   "path": [
-    "castle"
+    "castle",
+    "follow",
+    "forest",
+    "PLF"
   ],
   "choices": {
     "1": "",
