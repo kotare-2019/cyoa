@@ -3,7 +3,11 @@
     "name": "sdn",
     "fear": "gsf",
     "love": "fgdgf",
-    "items": []
+    "items": [
+      "A rusty key",
+      "A small shovel",
+      "A glowing crystal"
+    ]
   },
   "path": [],
   "decisions": {
