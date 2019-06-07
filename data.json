@@ -1,22 +1,24 @@
 {
   "character": {
-    "name": "Reuben",
+    "name": "",
     "fear": "",
     "love": "",
     "items": [
       "A rusty key",
       "A small shovel",
-      "A glowing crystal"
+      "A glowing crystal",
+      "mushrooms"
     ]
   },
   "path": [
     "forest",
     "PLF",
     "swamp",
-    "swamp end"
+    "swamp end",
+    "shroom"
   ],
   "decisions": {
-    "mushrooms": ""
+    "mushrooms": "true"
   },
   "_locals": {}
 }
