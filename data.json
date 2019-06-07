@@ -1,22 +1,23 @@
 {
   "character": {
-    "name": "Reuben",
-    "fear": "",
-    "love": "",
+    "name": "Tess",
+    "fear": "TIGERS",
+    "love": "lions",
     "items": [
       "A rusty key",
       "A small shovel",
-      "A glowing crystal"
+      "A glowing crystal",
+      "sword"
     ]
   },
   "path": [
     "forest",
-    "PLF",
-    "swamp",
-    "swamp end"
+    "WBP",
+    "castle",
+    "follow"
   ],
   "decisions": {
-    "mushrooms": ""
+    "sword": "true"
   },
   "_locals": {}
 }
