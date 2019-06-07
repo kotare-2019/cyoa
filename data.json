@@ -2,17 +2,21 @@
   "character": {
     "name": "",
     "fear": "",
-    "love": "",
+    "love": "smell of grass",
     "items": [
       "A rusty key",
       "A small shovel",
-      "A glowing crystal",
-      "mushrooms"
+      "A glowing crystal"
     ]
   },
-
-  "path": [],
-  "decisions": {},
-
+  "path": [
+    "forest",
+    "WBP",
+    "castle",
+    "castle end"
+  ],
+  "decisions": {
+    "sword": ""
+  },
   "_locals": {}
 }
