@@ -1,8 +1,8 @@
 {
   "character": {
     "name": "",
-    "fear": "",
-    "love": "smell of grass",
+    "fear": "fe",
+    "love": "",
     "items": [
       "A rusty key",
       "A small shovel",
@@ -11,12 +11,8 @@
   },
   "path": [
     "forest",
-    "WBP",
-    "castle",
-    "castle end"
+    "WBP"
   ],
-  "decisions": {
-    "sword": ""
-  },
+  "decisions": {},
   "_locals": {}
 }
