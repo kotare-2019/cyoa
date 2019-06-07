@@ -1,16 +1,22 @@
 {
   "character": {
     "name": "",
-    "fear": "",
+    "fear": "w",
     "love": "",
-    "items": []
+    "items": [
+      "A rusty key",
+      "A small shovel",
+      "A glowing crystal"
+    ]
   },
   "path": [
+    "forest",
     "WBP",
-    "castle"
+    "castle",
+    "end"
   ],
   "decisions": {
-    "sword": "true"
+    "sword": ""
   },
   "_locals": {}
 }
