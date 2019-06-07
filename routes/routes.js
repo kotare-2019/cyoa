@@ -14,7 +14,7 @@ router.get("/home", (req, res) => {
     data.character.love = ''
     data.character["items"] = []
     data.path = []
-    data.path.decisions = {}
+    data.decisions = {}
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
         if (err) throw err;
@@ -122,6 +122,19 @@ router.get("/castle/", (req, res) => {
     res.render("scenes/forest/castle/castle", data)
 });
 
+router.get("/castle/end", (req, res) => {
+
+
+    if (!data.path.includes("end")) {
+        data.path.push("end")
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+    res.render("scenes/forest/castle/end", data)
+});
 // router.get("/swamp/", (req, res) => {
 
 //     if (!data.path.includes("swamp")) {
@@ -172,6 +185,10 @@ router.post("/path/wellbeaten", (req, res) => {
 
     if (!data.decisions.sword) {
         data.decisions.sword = req.body.sword
+    }
+
+    if (data.decisions.sword == "true") {
+        data.character.items.push("sword")
     }
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
