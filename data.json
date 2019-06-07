@@ -6,10 +6,13 @@
     "items": [
       "A rusty key",
       "A small shovel",
-      "A glowing crystal"
+      "A glowing crystal",
+      "mushrooms"
     ]
   },
+
   "path": [],
   "decisions": {},
+
   "_locals": {}
 }

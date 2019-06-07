@@ -1,8 +1,26 @@
 body {
   color: antiquewhite;
   font-family: 'Jim Nightshade', cursive;
-  background:url("images/scroll.png") no-repeat center center fixed, url("images/forest.jpg") no-repeat center center fixed;
-  background-size: 900px, cover;
+  background: url("images/scroll.png") no-repeat center center fixed, url("images/forest.jpg") no-repeat center center fixed;
+  background-size: 1000px, cover;
+  text-align: center;
+  /* color: black;
+  font-size: 40px;
+  margin-left:38%;
+  margin-right: 38%;*/
+  margin-top: 5%;
+}
+
+
+.content {
+
+  height: 505px;
+  overflow: auto;
+  color: black;
+  font-size: 40.5px;
+  margin-left: 38%;
+  margin-right: 38%;
+  margin-top: 7%;
 }
 
 .flex {
@@ -29,7 +47,8 @@ body {
   height: 230px;
 }
 
-.title {
+
+#title {
   text-align: center;
   text-shadow: 3px 3px black;
   font-family: 'Raleway', sans-serif;
@@ -44,9 +63,16 @@ body {
 
 .form {
   font-family: 'Jim Nightshade', cursive;
+  background-color: rgba(25, 69, 172, 0.746);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-h1 {
+/* h1 {
   position: relative;
   bottom: -10px;
   color: black;
@@ -57,17 +83,17 @@ p {
   position: relative;
   bottom: -110px;
   color: black;
-  font-size: 25px;
-}
+  font-size: 25px; */
 
-.links {
+
+a {
+  background-color: rgba(25, 69, 172, 0.746);
+  box-shadow: 0 5px 3px rgb(41, 42, 46);
+  color: white;
+  padding: 1px;
   position: relative;
-  bottom: -350px;
-
-}
-
-.gradient {
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 19pt;
+  font-family: 'Raleway', sans-serif;
 }
