@@ -1,14 +1,11 @@
 {
   "character": {
-    "name": "",
-    "fear": "",
-    "love": "",
+    "name": "sdn",
+    "fear": "gsf",
+    "love": "fgdgf",
     "items": []
   },
-  "path": [
-    "WBP",
-    "castle"
-  ],
+  "path": [],
   "decisions": {
     "sword": "true"
   },
