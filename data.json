@@ -1,13 +1,23 @@
 {
   "character": {
-    "name": "sdn",
-    "fear": "gsf",
-    "love": "fgdgf",
-    "items": []
+    "name": "Reuben",
+    "fear": "teeth falling out",
+    "love": "burgers",
+    "items": [
+      "A rusty key",
+      "A small shovel",
+      "A glowing crystal",
+      "sword"
+    ]
   },
-  "path": [],
+  "path": [
+    "forest",
+    "WBP",
+    "castle",
+    "end"
+  ],
   "decisions": {
-    "sword": ""
+    "sword": "true"
   },
   "_locals": {}
 }
