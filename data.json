@@ -5,18 +5,9 @@
     "love": "fgdgf",
     "items": []
   },
-  "path": [
-    "castle",
-    "follow",
-    "forest",
-    "PLF"
-  ],
-  "choices": {
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "",
-    "5": ""
+  "path": [],
+  "decisions": {
+    "sword": "true"
   },
   "_locals": {}
 }

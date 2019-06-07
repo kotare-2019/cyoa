@@ -14,6 +14,7 @@ router.get("/home", (req, res) => {
     data.character.love = ''
     data.character["items"] = []
     data.path = []
+    data.path.decisions = {}
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
         if (err) throw err;
@@ -79,7 +80,7 @@ router.get("/follow/", (req, res) => {
     res.render("scenes/follow/follow", data)
 });
 
-router.get("/WBP/", (req, res) => {
+router.get("/path/wellbeaten/", (req, res) => {
 
     if (!data.path.includes("WBP")) {
         data.path.push("WBP")
@@ -93,7 +94,7 @@ router.get("/WBP/", (req, res) => {
     res.render("scenes/forest/WBP", data)
 });
 
-router.get("/PLF/", (req, res) => {
+router.get("/path/lessfollowed/", (req, res) => {
 
     if (!data.path.includes("PLF")) {
         data.path.push("PLF")
@@ -118,7 +119,7 @@ router.get("/castle/", (req, res) => {
         if (err) throw err;
     });
 
-    res.render("scenes/forest/castle", data)
+    res.render("scenes/forest/castle/castle", data)
 });
 
 // router.get("/swamp/", (req, res) => {
@@ -162,6 +163,22 @@ router.post("/begin1", (req, res) => {
     });
 
     res.redirect("/begin2/")
+
+})
+
+router.post("/path/wellbeaten", (req, res) => {
+
+    console.log(req.body)
+
+    if (!data.decisions.sword) {
+        data.decisions.sword = req.body.sword
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+    res.redirect("/castle/")
 
 })
 
