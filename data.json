@@ -10,16 +10,9 @@
       "mushrooms"
     ]
   },
-  "path": [
-    "forest",
-    "WBP",
-    "castle",
-    "PLF",
-    "swamp"
-  ],
-  "decisions": {
-    "sword": "",
-    "mushrooms": "true"
-  },
+
+  "path": [],
+  "decisions": {},
+
   "_locals": {}
 }

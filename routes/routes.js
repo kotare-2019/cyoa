@@ -163,6 +163,20 @@ router.get("/swamp/end", (req, res) => {
     res.render("scenes/forest/swamp/end", data)
 });
 
+router.get("/shroom", (req, res) => {
+
+
+    if (!data.path.includes("shroom")) {
+        data.path.push("shroom")
+    }
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), "utf8", err => {
+        if (err) throw err;
+    });
+
+    res.render("scenes/forest/swamp/shroom", data)
+});
+
 
 // router.get("/dungeon/", (req, res) => {
 
