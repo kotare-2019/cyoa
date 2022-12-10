@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-handlebars": "^3.0.2",
     "jest": "^24.5.0",
     "nodemon": "^1.18.10"
